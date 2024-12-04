@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrAPP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">   
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">RegistrAPP</a>
+            <nav class="navbar">
+            </nav>
+        </div>
+
+    <main class="main-content">
+        <div class="phone-container">
+            <img src="img/celular.png" alt="logo" width="300">
+        </div>
+
+        <div class="app-download">
+            <h1>Descarga la Nueva App</h1>
+            <h2>RegistrAPP</h2>
+            <div class="download-buttons">
+                <a href="#" class="download-btn">
+                    <i class="fas fa-download"></i> Descargar para Android
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <section class="funcionalidades">
+        <h2>Principales Funcionalidades</h2>
+        <div class="funcionalidades-contenedor">
+          <div class="funcionalidad">
+            <i class="icono fa fa-qrcode"></i>
+            <h3>Registro de Asistencia</h3>
+            <p>Registra la asistencia con código QR de forma rápida y eficiente.</p>
+          </div>
+          <div class="funcionalidad">
+            <i class="icono fa fa-calendar-alt"></i>
+            <h3>Próximas Reuniones</h3>
+            <p>Consulta las reuniones programadas y organiza tu tiempo fácilmente.</p>
+          </div>
+          <div class="funcionalidad">
+            <i class="icono fa fa-calendar-plus"></i>
+            <h3>Gestión de Calendario</h3>
+            <p>Agrega tus pendientes al calendario y mantente al día con tus reuniones.</p>
+          </div>
+        </div>
+      </section>
+      
+    <button class="accessibility-btn" onclick="toggleAccessibilityMenu()">
+        <i class="fas fa-universal-access"></i>
+    </button>
+
+    <div id="accessibility-menu">
+        <button class="close-btn" onclick="toggleAccessibilityMenu()">
+            <i class="fas fa-times"></i>
+        </button>
+        <h3>Menú de Accesibilidad (CTRL+U)</h3>
+        <div class="accessibility-widget">
+            <button id="toggle-large-text" onclick="toggleLargeText()">Activar XL Widget de gran tamaño</button>
+        </div>
+        <div class="accessibility-buttons">
+            <button id="toggle-read-page" onclick="toggleReadPage()">Leer página</button>
+            <button id="toggle-contrast" onclick="toggleContrast()">Contraste +</button>
+            <button id="toggle-intelligent-contrast" onclick="toggleIntelligentContrast()">Contraste inteligente</button>
+            <button id="toggle-highlight-links" onclick="toggleHighlightLinks()">Resaltar enlaces</button>
+            <button id="toggle-increase-text-size" onclick="toggleIncreaseTextSize()">Agrandar texto</button>
+            <button id="toggle-adjust-text-spacing" onclick="toggleAdjustTextSpacing()">Espaciado de texto</button>
+        </div>
+    </div>
+
+    <footer>
+        <div style="text-align: center; color: white; padding: 20px;">
+            <p>&copy; 2024 Cata y Fanny. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <body>
+        <script src="js/script.js"></script>
+    </body>
+    
